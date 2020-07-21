@@ -49,11 +49,8 @@ class ViewController: UIViewController {
         self.totalLabel.text = nil
     }
     
-    @IBAction func resetButton(_ sender: UIButton) {
-        clear()
-    }
-    //calculate the tip
-    @IBAction func calculateTip(_ sender: Any) {
+    //calculate tip
+    func calcualteTip() {
         //get the bill amount
         let bill = Double(billField.text!) ?? 0
         
@@ -65,6 +62,14 @@ class ViewController: UIViewController {
         //update the tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+    }
+    
+    @IBAction func resetButton(_ sender: UIButton) {
+        clear()
+    }
+    
+    @IBAction func calculateTip(_ sender: Any) {
+        calcualteTip()
     }
 }
 
