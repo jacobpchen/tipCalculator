@@ -1,4 +1,4 @@
-Pre-work - # tipCalculator#
+Pre-work - tipCalculator
 
 **tipCalculator** is a tip calculator application for iOS.
 
@@ -37,7 +37,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2020] [Jacob Chen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

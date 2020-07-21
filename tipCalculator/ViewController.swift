@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  tip
 //
-//  Created by user176468 on 7/16/20.
-//  Copyright © 2020 user176468. All rights reserved.
+//  Created by Jacob Chen on 7/16/20.
+//  Copyright © 2020 Jacob Chen. All rights reserved.
 //
 
 import UIKit
@@ -17,9 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var billUiView: UIView!
     @IBOutlet weak var totalUiView: UIView!
-    
-    
+    @IBOutlet weak var themeSwitch: UIBarButtonItem!
     @IBOutlet weak var resetButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Creates border and rounds the corner
@@ -35,13 +35,12 @@ class ViewController: UIViewController {
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     tipControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
     tipControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
-        
     }
         //hides the keyboard
         @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
-            
     }
+    
     //reset button
     func clear(){
         self.billField.text = nil
@@ -53,15 +52,17 @@ class ViewController: UIViewController {
     func calcualteTip() {
         //get the bill amount
         let bill = Double(billField.text!) ?? 0
-        
         //calculate tip and total
         let tipPercentages = [0.15, 0.18, 0.2]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
-        
         //update the tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+    }
+    
+    func setTheme(isDark:Bool) {
+        
     }
     
     @IBAction func resetButton(_ sender: UIButton) {
@@ -71,7 +72,22 @@ class ViewController: UIViewController {
     @IBAction func calculateTip(_ sender: Any) {
         calcualteTip()
     }
+    
+    @IBAction func themeToggled(_ sender: UISwitch) {
+        if sender.isOn {
+            print("switch toggled on")
+        }
+            else {
+                print("switch togled off")
+            }
+        }
+    
+    
+    
+    
+    
 }
+
 
 
 
