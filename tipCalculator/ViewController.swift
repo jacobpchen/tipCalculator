@@ -22,17 +22,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var resetButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Creates border and rounds the corner
         billUiView.layer.cornerRadius = 10
         totalUiView.layer.cornerRadius = 10
         resetButton.layer.cornerRadius = 10
-        
         totalUiView.layer.borderWidth = 1
         totalUiView.layer.borderColor = UIColor.red.cgColor
         tipControl.layer.borderWidth = 1
         tipControl.layer.borderColor = UIColor.systemPink.cgColor
         
-            let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        //changes text color of UISegmentedControl
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     tipControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
     tipControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
         
