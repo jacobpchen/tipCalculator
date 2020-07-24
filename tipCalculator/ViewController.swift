@@ -31,6 +31,9 @@ class ViewController: UIViewController {
         tipControl.layer.borderWidth = 1
         tipControl.layer.borderColor = UIColor.systemPink.cgColor
         
+        // Set the title in the navigation bar
+        self.title = "Tip Calculator"
+        
         //changes text color of UISegmentedControl
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     tipControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
