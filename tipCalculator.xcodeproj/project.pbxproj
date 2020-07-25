@@ -15,7 +15,7 @@
 		C941E81324C6249100E249A2 /* tipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941E81224C6249100E249A2 /* tipCalculatorTests.swift */; };
 		C941E81E24C6249100E249A2 /* tipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941E81D24C6249100E249A2 /* tipCalculatorUITests.swift */; };
 		C941E82D24C630EF00E249A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C941E82B24C630EF00E249A2 /* Main.storyboard */; };
-		C980AB1124CB616600ADEA43 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980AB1024CB616600ADEA43 /* SettingsViewController.swift */; };
+		C980AB1524CB747000ADEA43 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980AB1424CB747000ADEA43 /* SettingsViewController.swift */; };
 		C9D3F81924C765D400825AD7 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3F81824C765D400825AD7 /* ColorTheme.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		C941E81D24C6249100E249A2 /* tipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalculatorUITests.swift; sourceTree = "<group>"; };
 		C941E81F24C6249100E249A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C941E82C24C630EF00E249A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../ios/tip/tip/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C980AB1024CB616600ADEA43 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = tipCalculator/Assets.xcassets/SettingsViewController.swift; sourceTree = "<group>"; };
+		C980AB1424CB747000ADEA43 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C9D3F81824C765D400825AD7 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +83,6 @@
 		C941E7EF24C6248E00E249A2 = {
 			isa = PBXGroup;
 			children = (
-				C980AB1024CB616600ADEA43 /* SettingsViewController.swift */,
 				C9D3F81824C765D400825AD7 /* ColorTheme.swift */,
 				C941E7FA24C6248E00E249A2 /* tipCalculator */,
 				C941E81124C6249100E249A2 /* tipCalculatorTests */,
@@ -112,6 +111,7 @@
 				C941E80424C6249100E249A2 /* Assets.xcassets */,
 				C941E80624C6249100E249A2 /* LaunchScreen.storyboard */,
 				C941E80924C6249100E249A2 /* Info.plist */,
+				C980AB1424CB747000ADEA43 /* SettingsViewController.swift */,
 			);
 			path = tipCalculator;
 			sourceTree = "<group>";
@@ -268,8 +268,8 @@
 				C941E80024C6248E00E249A2 /* ViewController.swift in Sources */,
 				C9D3F81924C765D400825AD7 /* ColorTheme.swift in Sources */,
 				C941E7FC24C6248E00E249A2 /* AppDelegate.swift in Sources */,
-				C980AB1124CB616600ADEA43 /* SettingsViewController.swift in Sources */,
 				C941E7FE24C6248E00E249A2 /* SceneDelegate.swift in Sources */,
+				C980AB1524CB747000ADEA43 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,19 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var numPeopleField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+       
+        
     }
     
-
+    
+    @IBAction func numPeopleField(_ sender: Any) {
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -27,4 +33,14 @@ class SettingsViewController: UIViewController {
     }
     */
 
+
+}
+
+
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+    }
 }
