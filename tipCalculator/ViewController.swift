@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalUiView: UIView!
     @IBOutlet weak var themeSwitch: UIBarButtonItem!
     @IBOutlet weak var resetButton: UIButton!
-    
+    @IBOutlet weak var darkModeSwitch: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +39,6 @@ class ViewController: UIViewController {
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     tipControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
     tipControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
-        
-        
     }
     
     //hides the keyboard
@@ -53,6 +51,7 @@ class ViewController: UIViewController {
         self.billField.text = nil
         self.tipLabel.text = nil
         self.totalLabel.text = nil
+        
     }
     
     //calculate tip
@@ -77,8 +76,6 @@ class ViewController: UIViewController {
     @IBAction func calculateTip(_ sender: Any) {
         calcualteTip()
     }
-   
-    
 }
 
 
