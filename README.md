@@ -4,13 +4,13 @@ Pre-work - tipCalculator
 
 Submitted by: **Jacob Chen**
 
-Time spent: **5** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] Created a reset button to clear the bill, tip and total amounts
+- [X] Created a reset button to clear the bill, tip and total amounts
 
 ## Video Walkthrough 
 
@@ -34,6 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+I tried to implement dark mode but I had issues with implementing the switch button and changing the colors of the objects.
 
 ## License
 
